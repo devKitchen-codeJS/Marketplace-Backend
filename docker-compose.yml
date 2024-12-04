@@ -1,0 +1,13 @@
+services:
+  postgres:
+    image: postgres
+    restart: always
+    container_name: postgres-db
+    environment:
+      - POSTGRES_PASSWORD=123456
+      - POSTGRES_USER=sergey
+      - POSTGRES_DB=marketplace-db
+    volumes:
+      - /var/lib/postgresql/data
+    ports:
+      - "5433:5432"

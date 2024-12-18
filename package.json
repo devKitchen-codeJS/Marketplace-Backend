@@ -4,15 +4,15 @@
   "private": true,
   "description": "A Strapi application",
   "scripts": {
-    "build": "strapi build",
+    "build": "node init && strapi build",
     "deploy": "strapi deploy",
     "develop": "strapi develop",
-    "start": "strapi start",
+    "start": "node init && strapi start",
     "strapi": "strapi"
   },
   "dependencies": {
     "@strapi/plugin-cloud": "5.4.2",
-    "@strapi/plugin-graphql": "^5.4.2",
+    "@strapi/plugin-graphql": "^5.5.2",
     "@strapi/plugin-users-permissions": "5.4.2",
     "@strapi/strapi": "5.4.2",
     "pg": "8.8.0",
